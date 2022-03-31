@@ -1,0 +1,110 @@
+/*PROYECTO VIEWPORT UNITS Y FLEXBOX CURSO DOMESTIKA*/
+/*REESTABLECER CSS PARA ELIMINAR ANCHO 100% ESTÁNDAR DE CSS 
+Y EVITAR SCROLL HORIZONTAL*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*ESTILOS GENERALES, font family, font size (usado como referencia en unidades em y rem) color de fuente*/
+html{
+    font-family: 'Lato', sans-serif;
+    color:gray;  
+}
+
+/*font-family: 'Josefin Sans', sans-serif; TITULO DE LA PAGINA WEB*/
+/*ESTILOS BODY, DETERMINAR ALTURA MIN EN VH
+PARA QUE BODY OCUPE TODA LA VENTANA GRÁFICA
+ANCHO EN % ASI NO SE ACTIVA SCROLL*/
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#eeee;
+    font-size: 16px;}
+
+/*ENCABEZADO*/
+header{
+    width:100%;
+   
+}
+/*MENU NAVEGACION HORIZONTAL*/
+#header
+nav{
+    background-color:whitesmoke;
+    height: 5vh;
+    padding:5px;
+}
+.menu_navbar{
+    display:flex;
+    justify-content: space-between;
+}
+.menu_item{
+    display: inline-block;
+    color: darkslategrey;
+    text-align: center;
+    font-size: 1em;
+   
+    
+}
+.menu_item:hover{
+    font-weight: 600;
+    color:pink;
+    text-decoration: underline 0.1em;
+}
+
+/*CONTENIDO PRIMERA PAGINA*/    
+#home
+.container{
+    min-width: 100%;
+    height: 95vh;
+    padding:5%;
+}
+#home
+h2{
+    padding:2em;
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+}
+#home
+.row{
+    display: flex;
+    justify-content: center;
+}
+.scroll_span{
+    display:inline-block;
+    padding:2em;
+    font-size: 1em;
+    color:lightslategray;
+    text-align: center;
+}
+/*SECCION PORTFOLIO*/
+#portfolio
+.container{
+    min-width: 100%;
+    height:100vh;
+    background-color: pink;
+    padding:5%;
+}
+#portfolio
+h1{
+    font-size: 10em;
+    font-weight: 800;
+}
+/*mediaquerys inicio*/
+@media only screen and (min-width: 280px) and (max-width: 768px){
+   #home
+   h2{
+    font-size: 1.5em;
+   }
+   #portfolio
+h1{
+    font-size: 6em;
+    font-weight: 800;
+    
+}
+   
+    }
